@@ -129,58 +129,59 @@ a {
    ABOUT SECTION
 ------------------------- */
 #about {
-  position: relative;
   max-width: 60%;
   margin: 0 auto;
   padding: 0 2em;
+  position: relative;
   z-index: 2;
 }
 
-/* Overlap box for heading */
-.about-intro {
-  position: relative;
-  background: white;
-  padding: 1.5em 2em;
-  width: 30%;
+/* Flex container for about intro and bridge */
+.about-top-wrapper {
+  display: flex;
+  align-items: flex-end; /* align bottoms */
   margin-top: -120px; /* overlap hero */
-  border-radius: 40px 40px 0 0; /* rounded top corners */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  gap: 0;
+  position: relative;
   z-index: 3;
 }
 
-/* Concave circular cutout on bottom-right corner */
-.about-intro::before {
-  content: "";
-  position: absolute;
-  bottom: -25px;    /* vertical offset - adjust for depth */
-  right: -25px;     /* horizontal offset - adjust for width */
-  width: 50px;      /* size of cutout circle */
-  height: 50px;
-  background: white; /* match background color */
-  border-radius: 50%; /* make it a perfect circle */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* optional shadow for blending */
+/* About intro block */
+.about-intro {
+  width: 30%;
+  background: white;
+  padding: 1.5em 2em;
+  border-radius: 40px 40px 0 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  position: relative;
+  z-index: 5;
+}
+
+/* Concave bridge shape immediately right of about-intro */
+.about-bridge {
+  width: 20%;              /* width of the concave shape */
+  height: 120px;           /* same height as overlap */
+  background: white;
+
+  /* Circular cutout on left bottom corner */
+  clip-path: circle(60px at 0% 100%);
+  
+  /* Matching shadow for consistency */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  
+  position: relative;
   z-index: 4;
 }
 
-/* Heading style */
-.about-intro h2 {
-  margin: 0;
-  font-size: 2em;
-  color: #3a3a39;
-}
-
-/* Full-width section for body text */
+/* Body content full width below */
 .about-body {
   background: white;
   padding: 2em;
-  border-radius: 0 40px 40px 40px; /* round top-right and bottom corners */
+  border-radius: 0 40px 40px 40px; /* rounded corners except top-left */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  width: 100%;
+  margin-top: 0;
   line-height: 1.6;
   color: #555;
-  margin-top: -25px; /* nest it upward into concave cutout */
-  position: relative;
-  z-index: 1;
 }
 /* -------------------------
    PROJECT CARDS
