@@ -157,7 +157,7 @@ a {
   width: 50px; /* should match bottom-right border radius */
   height: 30px; /* adjust as needed */
   background: #000;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   pointer-events: none;
   z-index: 4;
 }
