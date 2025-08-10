@@ -1,295 +1,459 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adam Sawinski | Portfolio & Resume</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* -------------------------
+   GLOBAL STYLES
+------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #3a3a39; /* Dark brown text */
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 1em; /* base 16px */
+}
 
-  <!-- HEADER WITH NAV -->
-  <header class="site-header">
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#" class="highlight-btn">Hire Me</a></li>
-      </ul>
-    </nav>
-  </header>
+/* Links */
+a {
+  text-decoration: none;
+  color: #894545; /* Accent red for links */
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 1em;
+}
+a:hover, a:focus {
+  color: #a15151;
+  outline: none;
+}
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <p class="intro">Welcome to my world</p>
-        <h1>Hi, I’m <span class="accent">Adam Sawinski</span><br>a Graphic Designer & Web Developer.</h1>
-        <p class="description">
-          Blending design, branding, and development to bring ideas to life — online and in print.
-        </p>
-      </div>
-      <div class="hero-image">
-        <img src="graphic-face-image.jpg" alt="Adam Sawinski" />
-      </div>
-    </div>
-  </section>
+/* -------------------------
+   NAVIGATION
+------------------------- */
+.site-header {
+  max-width: 90%;
+  padding: 1.5em 2em;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1em;
+}
 
-  <!-- ABOUT --> 
-  <section id="about">
-    <div class="about-top-wrapper">
-      <div class="about-intro">
-        <h2>About Me</h2>
-      </div>
-      <div class="about-bridge"></div>
-    </div>
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 2em;
+}
 
-    <!-- Full-width white background for content -->
-    <div class="about-body">
-      <p>
-        I’m a graphic designer based in Minneapolis, MN with over 5 years of experience in:
-        <strong>WordPress development</strong>, <strong>web design</strong>, <strong>branded print & digital asset creation</strong>, 
-        <strong>product photography</strong>, and <strong>email marketing</strong>.
-      </p>
-      <p>
-        I work extensively with Adobe Creative Cloud (Illustrator, InDesign, Photoshop, Lightroom),
-        and I also use Figma and SketchUp to build beautiful, functional designs. 
-        For email marketing, I specialize in creating fully customized templates using Figma and Mailchimp.
-      </p>
-    </div>
-  </section>
+.nav-bar a {
+  font-weight: 600;
+  color: #3a3a39;
+  transition: color 0.3s ease;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+}
 
-  <!-- SKILLS -->
-  <section id="skills" style="max-width: 800px; margin: 2em auto; padding: 0 2em;">
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1em;">
-      <h2 class="section-pill">Skills & Tools</h2>
-      <a href="https://adam-sawinski.github.io/#projects" class="heading-link" aria-label="Go to Projects section">View Projects</a>
-    </div>
+.nav-bar a:hover {
+  color: #894545; /* Accent hover */
+}
 
-    <ul class="skills-list">
-      <li class="domain-group">
-        <span class="domain-label">Design:</span>
-        <div class="skills-pills">
-          <span class="skill-pill">Photoshop</span>
-          <span class="skill-pill">Illustrator</span>
-          <span class="skill-pill">InDesign</span>
-          <span class="skill-pill">Lightroom</span>
-          <span class="skill-pill">Figma</span>
-          <span class="skill-pill">SketchUp</span>
-        </div>
-      </li>
-      <li class="domain-group">
-        <span class="domain-label">Web:</span>
-        <div class="skills-pills">
-          <span class="skill-pill">WordPress</span>
-          <span class="skill-pill">HTML</span>
-          <span class="skill-pill">CSS</span>
-          <span class="skill-pill">Divi</span>
-          <span class="skill-pill">Elementor</span>
-        </div>
-      </li>
-      <li class="domain-group">
-        <span class="domain-label">Email Marketing:</span>
-        <div class="skills-pills">
-          <span class="skill-pill">Mailchimp</span>
-          <span class="skill-pill">Figma-to-Email workflows</span>
-        </div>
-      </li>
-      <li class="domain-group">
-        <span class="domain-label">Photography:</span>
-        <div class="skills-pills">
-          <span class="skill-pill">Product & Studio photography</span>
-        </div>
-      </li>
-    </ul>
-  </section>
+.highlight-btn {
+  background-color: #894545; /* Punchy red accent */
+  color: #ffffff !important;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(137, 69, 69, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+}
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <!-- Example project card -->
-      <a href="project1.html" class="project-card" style="background-image: url('images/project1.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project One</h3>
-            <p>Short project description goes here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">HTML</span>
-              <span class="project-skill-pill">CSS</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
+.highlight-btn:hover {
+  background-color: #a15151;
+  box-shadow: 0px 6px 14px rgba(137, 69, 69, 0.5);
+}
 
-      <!-- Duplicate for each project -->
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-      <!-- You had multiple repeated project2.html cards - I preserved all duplicates -->
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="project2.html" class="project-card" style="background-image: url('images/project2.jpg');">
-        <div class="overlay"></div>
-        <div class="card-content">
-          <div class="card-text">
-            <h3>Project Two</h3>
-            <p>Another description here.</p>
-          </div>
-          <div class="card-footer">
-            <div class="project-skills">
-              <span class="project-skill-pill">JavaScript</span>
-              <span class="project-skill-pill">React</span>
-            </div>
-            <div class="expand-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+/* -------------------------
+   HERO SECTION
+------------------------- */
+.hero {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-image: url("background-wavy-lines.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+  padding-bottom: 4em; /* space for overlap */
+}
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>I'm currently available for freelance or full-time work. Feel free to reach out!</p>
-    <p><strong>Email:</strong> your.email@example.com</p>
-    <p><strong>Location:</strong> Minneapolis, MN</p>
-  </section>
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  gap: 3em;
+  padding: 4em 2em;
+  max-width: 1200px;
+}
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Adam Sawinski. All rights reserved.</p>
-  </footer>
+.hero-text {
+  flex: 1;
+  font-size: 1em; /* base */
+  margin: 0.3em 0;
+  line-height: 1.2;
+  color: #2a2a28; /* very dark gray/brown */
+}
 
-</body>
-</html>
+.hero-text .intro {
+  text-transform: uppercase;
+  font-size: 0.529em; /* ≈ 0.85 * base */
+  letter-spacing: 0.125em; /* 2px approx */
+  color: #5a4a3a; /* darker warm brown */
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.hero-text h1 {
+  font-size: 2.618em; /* golden ratio scale - large display (about 42px) */
+  margin: 0.3em 0;
+  line-height: 1.2;
+  color: #2a2a28;
+  font-weight: 700;
+}
+
+.hero-text h1 .accent {
+  color: #894545; /* punchy red accent */
+  font-size: 3.618em; /* even bigger accent */
+}
+
+.hero-text .description {
+  color: #444; /* dark gray */
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/* Hero image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px 8px 8px 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2vw 4vw;
+  background-color: #ffffff;
+}
+
+/* -------------------------
+   ABOUT SECTION
+------------------------- */
+#about {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 0 2em;
+  position: relative;
+  z-index: 2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Flex container for about intro and bridge */
+.about-top-wrapper {
+  display: flex;
+  align-items: flex-end; /* align bottoms */
+  margin-top: -150px; /* overlap hero */
+  gap: 0;
+  position: relative;
+  z-index: 3;
+}
+
+/* About intro block */
+.about-intro {
+  width: 30%;
+  height: 50px;
+  background: white;
+  padding: 1.5em 2em 0;
+  border-radius: 40px 30px 0 0;
+  position: relative;
+  z-index: 5;
+  color: #3a3a39;
+  font-weight: 700;
+  font-size: 2.618em; /* big heading */
+  letter-spacing: 0.04em;
+}
+.about-intro h2 {
+  margin: 0.3em 0;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2.618em;
+}
+
+/* Bridge shape */
+.about-bridge {
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 4;
+  -webkit-mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
+  mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
+}
+
+/* Body content full width below */
+.about-body {
+  background: white;
+  padding: 2em;
+  border-radius: 0 40px 40px 40px; /* rounded corners except top-left */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 0;
+  line-height: 1.6;
+  color: #555; /* dark grey */
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+}
+
+/* -------------------------
+   SKILLS SECTION
+------------------------- */
+#skills {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
+  font-size: 1em;
+}
+
+.section-pill {
+  background: #894545; /* punchy warm accent */
+  color: white;
+  padding: 0.6em 1.8em;
+  border-radius: 9999px; /* pill shape */
+  font-size: 1.618em;
+  font-weight: 700;
+  margin: 0; /* reset default h2 margin */
+  white-space: nowrap;
+  letter-spacing: 0.06em;
+}
+
+.heading-link {
+  font-size: 1em;
+  color: #894545; /* dark red text */
+  border: 2px solid #894545;
+  border-radius: 9999px;
+  padding: 0.4em 1em;
+  background: transparent;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 0.05em;
+}
+
+.heading-link:hover,
+.heading-link:focus {
+  background-color: #894545;
+  color: white;
+  outline: none;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.domain-group {
+  background: #e7e9ea; /* light grey background */
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  color: #3a3a39;
+}
+
+.domain-label {
+  font-weight: 700;
+  font-size: 1.618em;
+  color: #3a3a39;
+  display: block;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.04em;
+}
+
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.skill-pill {
+  display: inline-block;
+  background: #8d4747; /* lighter brick red */
+  color: #ffffff;
+  padding: 0.25em 0.8em;
+  border-radius: 9999px;
+  font-size: 1em;
+  font-weight: 400;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------
+   PROJECT CARDS
+------------------------- */
+#projects {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
+}
+
+#projects h2 {
+  font-size: 2.618em;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #3a3a39;
+  font-weight: 700;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Force 4 per row on desktop */
+  gap: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  aspect-ratio: 3 / 4; /* portrait shape */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  transition: background 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-text h3 {
+  font-size: 1.25em;
+  margin: 0 0 0.25rem 0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.card-text p {
+  font-size: 0.864em;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-skill-pill {
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  font-size: 0.7em;
+  padding: 0.25em 0.5em;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.expand-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-card:hover .expand-icon {
+  opacity: 1;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+footer {
+  background-color: #f4f4f4;
+  color: #555;
+  text-align: center;
+  padding: 2em 1em;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+}
