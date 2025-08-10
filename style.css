@@ -186,6 +186,66 @@ a {
   color: #555;
 }
 /* -------------------------
+   SKILLS SECTION
+------------------------- */
+#skills {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.section-pill {
+  display: inline-block;
+  background: #894545; /* punchy warm accent */
+  color: white;
+  padding: 0.6em 1.8em;
+  border-radius: 9999px; /* pill shape */
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 1.5em;
+}
+
+.domain-pill {
+  display: inline-block;
+  background: #b7a287; /* warm tan accent */
+  color: #3a3a39;
+  font-weight: 600;
+  padding: 0.3em 1em;
+  border-radius: 9999px;
+  font-size: 1em;
+  margin-bottom: 0.6em;
+}
+
+.skills-pills {
+  margin-top: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.skill-pill {
+  display: inline-block;
+  background: #d6cbbd; /* lighter warm tan */
+  color: #3a3a39;
+  padding: 0.25em 0.8em;
+  border-radius: 9999px;
+  font-size: 0.9em;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+/* -------------------------
    PROJECT CARDS
 ------------------------- */
 .project {
