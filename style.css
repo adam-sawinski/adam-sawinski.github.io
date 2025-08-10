@@ -2,8 +2,7 @@
    GLOBAL STYLES
 ------------------------- */
 body {
-  max-width:90%,
-  margin: 0, auto;
+  margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
@@ -21,6 +20,7 @@ a {
    NAVIGATION
 ------------------------- */
 .site-header {
+  max-width:90%;
   padding: 1.5em 2em;
   background-color: transparent;
 }
