@@ -158,16 +158,16 @@ a {
 }
 
 .about-bridge {
-  width: 20%;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background: white;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   position: relative;
   z-index: 4;
 
   /* Concave circular cutout rotated 180deg => top right corner */
-  -webkit-mask-image: radial-gradient(circle 60px at right top, transparent 59px, black 60px);
-  mask-image: radial-gradient(circle 60px at right top, transparent 59px, black 60px);
+  -webkit-mask-image: radial-gradient(circle 100px at right top, transparent 100px, black 60px);
+  mask-image: radial-gradient(circle 100px at right top, transparent 100px, black 60px);
 }
 
 /* Body content full width below */
