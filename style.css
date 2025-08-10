@@ -85,8 +85,6 @@ a:hover, a:focus {
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: overlay;
   padding-bottom: 4em; /* space for overlap */
-  color: white; /* text on colored bg */
-  font-weight: 600;
 }
 
 .hero-container {
@@ -101,36 +99,36 @@ a:hover, a:focus {
 
 .hero-text {
   flex: 1;
+  font-size: 2.5em;
+  margin: 0.3em 0;
+  line-height: 1.2;
+  color: #2a2a28; /* very dark gray/brown */
 }
 
 .hero-text .intro {
   text-transform: uppercase;
   font-size: 0.85em;
-  letter-spacing: 0.12em;
-  color: #ffffffcc; /* soft white */
+  letter-spacing: 2px;
+  color: #5a4a3a; /* darker warm brown */
   font-weight: 700;
   margin-bottom: 0.5em;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.5em;
   margin: 0.3em 0;
-  line-height: 1.1;
-  color: white;
-  font-weight: 900;
-  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: #2a2a28; /* very dark gray/brown */
 }
 
 .hero-text h1 .accent {
-  color: #894545; /* Punchy bright red */
+  color: #894545; /* keep your punchy red accent */
 }
 
 .hero-text .description {
-  color: #eeeeeecc;
+  color: #444; /* dark gray */
   max-width: 500px;
   line-height: 1.6;
-  font-weight: 400;
-  font-size: 1.1rem;
 }
 
 /* Hero image */
