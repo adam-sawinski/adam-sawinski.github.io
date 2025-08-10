@@ -69,6 +69,7 @@ a {
   max-width: 1200px;
   margin: auto;
   gap: 3em;
+  background-image: url("background-wavy-lines.jpg");
 }
 
 .hero-text {
