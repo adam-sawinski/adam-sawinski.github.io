@@ -70,6 +70,9 @@ a {
   margin: auto;
   gap: 3em;
   background-image: url("background-wavy-lines.jpg");
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-position: center; /* Centers the image within the element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .hero-text {
