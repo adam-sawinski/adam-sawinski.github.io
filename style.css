@@ -156,7 +156,9 @@ a {
   z-index: 5;
 }
 .about-intro h2{
-font-size:45px;
+  font-size: 2.em;
+  margin: 0.3em 0;
+  line-height: 1.2;
 }
 .about-bridge {
   width: 100px;
