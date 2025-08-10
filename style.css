@@ -64,13 +64,15 @@ a {
 .hero {
   width: 90%;
   margin: 0 auto;
-  border-radius:40px; 
+  border-radius: 40px;
   background-image: url("background-wavy-lines.jpg");
-  background-size: cover; /* Scales the image to cover the entire element */
-  background-position: center; /* Centers the image within the element */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-color: rgba(255, 255, 255, 0.5); /* Black overlay with 50% opacity */
-  background-blend-mode: overlay; /* Blends the color with the image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+  padding-bottom: 4em; /* space for overlap */
+}
    
 }
 .hero-container{
@@ -127,35 +129,27 @@ a {
 /* -------------------------
    ABOUT SECTION
 ------------------------- */
-#about {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em 2em 2em;
-}
-
-/* The "cut-out" white box */
+/* Overlap box */
 .about-intro {
   position: relative;
   background: white;
   padding: 1.5em 2em;
-  border-radius: 20px;
+  border-radius: 40px 40px 20px 20px; /* match hero top curve, softer bottom curve */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   width: 60%;
-  z-index: 2;
+  z-index: 3;
   
-  /* This creates the overlap */
-  margin-top: -60px; /* adjust based on hero height */
+  /* pull it up more */
+  margin-top: -120px;
 }
 
-/* About heading style */
+/* Heading inside cut-out */
 .about-intro h2 {
   margin: 0;
   font-size: 2em;
   color: #3a3a39;
 }
 
-/* Rest of the about text */
 .about-content {
   margin-top: 1.5em;
   line-height: 1.6;
