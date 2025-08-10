@@ -165,9 +165,9 @@ a {
   position: relative;
   z-index: 4;
 
-  /* Use mask-image to cut out a circle from the left bottom corner */
-  -webkit-mask-image: radial-gradient(circle 60px at left bottom, transparent 59px, black 60px);
-  mask-image: radial-gradient(circle 60px at left bottom, transparent 59px, black 60px);
+  /* Concave circular cutout rotated 180deg => top right corner */
+  -webkit-mask-image: radial-gradient(circle 60px at right top, transparent 59px, black 60px);
+  mask-image: radial-gradient(circle 60px at right top, transparent 59px, black 60px);
 }
 
 /* Body content full width below */
