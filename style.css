@@ -6,23 +6,32 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  color: #3a3a39; /* Dark body text */
+  color: #3a3a39; /* Dark brown text */
   line-height: 1.6;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 /* Links */
 a {
   text-decoration: none;
-  color: inherit;
+  color: #894545; /* Accent red for links */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #a15151;
+  outline: none;
 }
 
 /* -------------------------
    NAVIGATION
 ------------------------- */
 .site-header {
-  max-width:90%;
+  max-width: 90%;
   padding: 1.5em 2em;
   background-color: transparent;
+  font-weight: 600;
 }
 
 .nav-bar ul {
@@ -36,9 +45,10 @@ a {
 }
 
 .nav-bar a {
-  font-weight: 500;
+  font-weight: 600;
   color: #3a3a39;
   transition: color 0.3s ease;
+  letter-spacing: 0.05em;
 }
 
 .nav-bar a:hover {
@@ -52,6 +62,8 @@ a {
   border-radius: 4px;
   box-shadow: 0px 4px 12px rgba(137, 69, 69, 0.4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 .highlight-btn:hover {
@@ -73,17 +85,20 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: overlay;
   padding-bottom: 4em; /* space for overlap */
+  color: white; /* text on colored bg */
+  font-weight: 600;
 }
 
-.hero-container{
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  gap: 3em; 
-  padding: 4em 2em;  
-  max-width:1200px;
+  gap: 3em;
+  padding: 4em 2em;
+  max-width: 1200px;
 }
+
 .hero-text {
   flex: 1;
 }
@@ -91,27 +106,34 @@ a {
 .hero-text .intro {
   text-transform: uppercase;
   font-size: 0.85em;
-  letter-spacing: 2px;
-  color: #b7a287; /* Warm tan accent */
+  letter-spacing: 0.12em;
+  color: #ffffffcc; /* soft white */
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
 .hero-text h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
   margin: 0.3em 0;
-  line-height: 1.2;
-  color: #3a3a39; /* Darker for readability */
+  line-height: 1.1;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
 .hero-text h1 .accent {
-  color: #894545; /* Punchy bright color */
+  color: #894545; /* Punchy bright red */
 }
 
 .hero-text .description {
-  color: #555;
+  color: #eeeeeecc;
   max-width: 500px;
   line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
+/* Hero image */
 .hero-image {
   flex: 1;
   display: flex;
@@ -121,9 +143,9 @@ a {
 .hero-image img {
   max-width: 100%;
   border-radius: 8px 8px 8px 40px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   padding: 2vw 4vw;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 /* -------------------------
@@ -135,6 +157,10 @@ a {
   padding: 0 2em;
   position: relative;
   z-index: 2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 /* Flex container for about intro and bridge */
@@ -156,21 +182,25 @@ a {
   border-radius: 40px 30px 0 0;
   position: relative;
   z-index: 5;
-}
-.about-intro h2{
+  color: #3a3a39;
+  font-weight: 700;
   font-size: 2em;
+  letter-spacing: 0.04em;
+}
+.about-intro h2 {
   margin: 0.3em 0;
   line-height: 1.2;
+  font-weight: 700;
 }
+
+/* Bridge shape */
 .about-bridge {
   width: 50px;
   height: 50px;
   background: white;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 4;
-
-  /* Concave circular cutout rotated 180deg => top right corner */
   -webkit-mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
   mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
 }
@@ -180,11 +210,15 @@ a {
   background: white;
   padding: 2em;
   border-radius: 0 40px 40px 40px; /* rounded corners except top-left */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   margin-top: 0;
   line-height: 1.6;
-  color: #555;
+  color: #555; /* dark grey */
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
 }
+
 /* -------------------------
    SKILLS SECTION
 ------------------------- */
@@ -193,7 +227,8 @@ a {
   margin: 2em auto;
   padding: 0 2em;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
 }
 
 .section-pill {
@@ -205,6 +240,7 @@ a {
   font-weight: 700;
   margin: 0; /* reset default h2 margin */
   white-space: nowrap;
+  letter-spacing: 0.06em;
 }
 
 .heading-link {
@@ -218,6 +254,7 @@ a {
   font-weight: 600;
   white-space: nowrap;
   transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 0.05em;
 }
 
 .heading-link:hover,
@@ -234,13 +271,15 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  font-weight: 400;
 }
 
 .domain-group {
   background: #e7e9ea; /* light grey background */
   border-radius: 12px;
   padding: 1em 1.5em;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  color: #3a3a39;
 }
 
 .domain-label {
@@ -249,6 +288,7 @@ a {
   color: #3a3a39;
   display: block;
   margin-bottom: 0.8em;
+  letter-spacing: 0.04em;
 }
 
 .skills-pills {
@@ -264,23 +304,28 @@ a {
   padding: 0.25em 0.8em;
   border-radius: 9999px;
   font-size: 1em;
-  font-wieght: 400;
+  font-weight: 400;
   white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 /* -------------------------
    PROJECT CARDS
 ------------------------- */
-/* Projects Section */
 #projects {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a39;
+  letter-spacing: 0.02em;
 }
 
 #projects h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #3a3a39;
+  font-weight: 700;
 }
 
 .projects-grid {
@@ -305,12 +350,12 @@ a {
 .project-card .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   transition: background 0.3s ease;
 }
 
 .project-card:hover .overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .card-content {
@@ -325,15 +370,17 @@ a {
 .card-text h3 {
   font-size: 1.25rem;
   margin: 0 0 0.25rem 0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .card-text p {
   font-size: 0.9rem;
   margin: 0;
   opacity: 0.9;
+  font-weight: 400;
 }
 
-/* Footer locked to bottom */
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -358,13 +405,12 @@ a {
   font-weight: 500;
 }
 
-/* Expand icon inside bounds */
 .expand-icon {
   opacity: 0;
   transition: opacity 0.3s ease;
-  width: 20px;      /* match SVG width */
-  height: 20px;     /* match SVG height */
-  flex-shrink: 0;   /* prevent shrinking */
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,12 +419,6 @@ a {
 
 .project-card:hover .expand-icon {
   opacity: 1;
-}
-
-/* Optional: make SVG stroke color transition smoothly */
-.expand-icon svg {
-  stroke: white;
-  transition: stroke 0.3s ease;
 }
 
 /* Responsive breakpoints */
@@ -393,6 +433,7 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
 /* -------------------------
    FOOTER
 ------------------------- */
@@ -402,4 +443,7 @@ footer {
   text-align: center;
   padding: 2em 1em;
   margin-top: 2em;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
 }
