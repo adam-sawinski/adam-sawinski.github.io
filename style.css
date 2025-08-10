@@ -73,8 +73,7 @@ a {
   background-blend-mode: overlay;
   padding-bottom: 4em; /* space for overlap */
 }
-   
-}
+
 .hero-container{
   display: flex;
   align-items: center;
