@@ -1,9 +1,8 @@
 /* Color Palette:
-Dark Charcoal: #323031
-Dark Gray: #3d3b3c
-Medium Gray: #7f7979
-Light Tan: #c1bdb3
-Accent Purple-Gray: #5f5b6b
+Slate Blue: #545E75
+Off White: #F7F7FF
+Sage Green: #69A297
+Deep Brown: #312509
 */
 
 body {
@@ -11,15 +10,15 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F7F7FF;
-  color: #c1bdb3;
+  color: #312509;
   line-height: 1.6;
 }
 
 header {
-  background-color: #3d3b3c;
+  background-color: #545E75;
   padding: 2em 1em;
   text-align: center;
-  color: #c1bdb3;
+  color: #F7F7FF;
 }
 
 header h1 {
@@ -29,7 +28,7 @@ header h1 {
 
 header p {
   margin: 0.5em 0;
-  color: #7f7979;
+  color: #69A297;
 }
 
 nav ul {
@@ -44,13 +43,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #c1bdb3;
+  color: #F7F7FF;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #5f5b6b;
+  color: #69A297;
 }
 
 section {
@@ -60,8 +59,8 @@ section {
 }
 
 section h2 {
-  color: #c1bdb3;
-  border-bottom: 2px solid #5f5b6b;
+  color: #312509;
+  border-bottom: 2px solid #69A297;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
@@ -75,16 +74,18 @@ ul li {
 }
 
 .project {
-  background-color: #3d3b3c;
+  background-color: #545E75;
   padding: 1em;
   margin-bottom: 1em;
-  border-left: 5px solid #5f5b6b;
+  border-left: 5px solid #69A297;
+  color: #F7F7FF;
 }
 
 footer {
-  background-color: #3d3b3c;
-  color: #7f7979;
+  background-color: #545E75;
+  color: #69A297;
   text-align: center;
   padding: 2em 1em;
   margin-top: 2em;
 }
+
