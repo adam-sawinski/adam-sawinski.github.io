@@ -112,7 +112,7 @@ a:hover, a:focus {
 
 .hero-text .intro {
   text-transform: uppercase;
-  font-size: 0.529em; /* ≈ 0.85 * base */
+  font-size: 1.2em;
   letter-spacing: 0.125em; /* 2px approx */
   color: #5a4a3a; /* darker warm brown */
   font-weight: 700;
@@ -120,7 +120,7 @@ a:hover, a:focus {
 }
 
 .hero-text h1 {
-  font-size: 2.618em; /* golden ratio scale - large display (about 42px) */
+  font-size: 2em; /* golden ratio scale - large display (about 42px) */
   margin: 0.3em 0;
   line-height: 1.2;
   color: #2a2a28;
@@ -129,7 +129,7 @@ a:hover, a:focus {
 
 .hero-text h1 .accent {
   color: #894545; /* punchy red accent */
-  font-size: 3.618em; /* even bigger accent */
+  font-size: 2em;
 }
 
 .hero-text .description {
