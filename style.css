@@ -67,7 +67,8 @@ a {
   background-size: cover; /* Scales the image to cover the entire element */
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  opacity: 0.5; /* Adjust this value (0.0 to 1.0) for desired transparency */ 
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  background-blend-mode: multiply; /* Blends the color with the image */
 }
 .hero-container{
   display: flex;
