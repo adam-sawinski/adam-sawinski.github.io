@@ -136,30 +136,20 @@ a {
   z-index: 2;
 }
 
-/* Overlap box for heading */
 .about-intro {
   position: relative;
   background: white;
   padding: 1.5em 2em;
   width: 30%;
-  margin-top: -120px; /* pulls into hero */
+  margin-top: -120px; /* overlap hero */
   border-radius: 40px 40px 0 0; /* rounded top corners */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  z-index: 3;
-}
 
-/* Pseudo-element to cover bottom-right shadow */
-.about-intro::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50px; /* matches border-radius */
-  height: 30px; /* adjust as needed */
-  background: white; /* same as background */
-  border-bottom-left-radius: 50px;
-  pointer-events: none;
-  z-index: 4;
+  /* Mask with inner concave curve on right side */
+  -webkit-mask:
+    radial-gradient(circle 50px at 100% 90%, transparent 48%, black 50%) right center no-repeat;
+  mask:
+    radial-gradient(circle 50px at 100% 90%, transparent 48%, black 50%) right center no-repeat;
 }
 
 /* Heading style */
@@ -169,7 +159,6 @@ a {
   color: #3a3a39;
 }
 
-/* Full-width section for body text */
 .about-body {
   background: white;
   padding: 2em;
@@ -178,10 +167,11 @@ a {
   width: 100%;
   line-height: 1.6;
   color: #555;
-  margin-top: -20px; /* slight overlap to soften corner */
+  margin-top: -25px; /* nest inside intro's curve */
   position: relative;
   z-index: 1;
 }
+
 
 /* -------------------------
    PROJECT CARDS
