@@ -152,7 +152,12 @@ a {
   background: white;
   padding: 1.5em 2em;
   border-radius: 40px 40px 0 0;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    box-shadow:
+    /* top shadow */
+    0 -6px 20px rgba(0,0,0,0.08),
+    /* left shadow */
+    -6px 0 20px rgba(0,0,0,0.08);
+  /* remove the default full shadow */
   position: relative;
   z-index: 5;
 }
