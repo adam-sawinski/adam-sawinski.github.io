@@ -46,7 +46,7 @@ a {
 
 .highlight-btn {
   background-color: #894545; /* Punchy red accent */
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 0.6em 1.2em;
   border-radius: 4px;
   box-shadow: 0px 4px 12px rgba(137, 69, 69, 0.4);
