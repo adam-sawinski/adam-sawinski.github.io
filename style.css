@@ -129,41 +129,43 @@ a {
 /* -------------------------
    ABOUT SECTION
 ------------------------- */
-/* Overlap box */
+#about {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+  z-index: 2;
+}
+
+/* Overlap box for heading */
 .about-intro {
   position: relative;
   background: white;
   padding: 1.5em 2em;
-  border-radius: 40px 40px 20px 20px; /* match hero top curve, softer bottom curve */
+  border-radius: 40px 40px 0 0; /* matches hero curve at top */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  width: 60%;
+  width: 30%;
   z-index: 3;
-  
-  /* pull it up more */
-  margin-top: -120px;
+  margin-top: -120px; /* pulls into hero */
 }
 
-/* Heading inside cut-out */
+/* Heading style */
 .about-intro h2 {
   margin: 0;
   font-size: 2em;
   color: #3a3a39;
 }
 
-.about-content {
-  margin-top: 1.5em;
+/* Full-width section for body text */
+.about-body {
+  background: white;
+  padding: 2em;
+  border-radius: 0 0 20px 20px; /* rounded only on bottom corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 100%;
   line-height: 1.6;
   color: #555;
-}
-
-/* -------------------------
-   SECTION HEADINGS
-------------------------- */
-section h2 {
-  color: #894545;
-  border-bottom: 2px solid #b7a287;
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
+  margin-top: 0; /* sits flush under heading box */
 }
 
 /* -------------------------
