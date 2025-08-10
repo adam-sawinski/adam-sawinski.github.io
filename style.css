@@ -2,7 +2,8 @@
    GLOBAL STYLES
 ------------------------- */
 body {
-  margin: 0;
+  max-width:90%,
+  margin: 0, auto;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
@@ -170,8 +171,8 @@ a {
   z-index: 4;
 
   /* Concave circular cutout rotated 180deg => top right corner */
-  -webkit-mask-image: radial-gradient(circle 100px at right top, transparent 100px, black 60px);
-  mask-image: radial-gradient(circle 100px at right top, transparent 100px, black 60px);
+  -webkit-mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 60px);
+  mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 60px);
 }
 
 /* Body content full width below */
