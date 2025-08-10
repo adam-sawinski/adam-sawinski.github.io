@@ -1,1 +1,8 @@
-
+project/
+│ index.html
+│ style.css
+│
+└── images/
+    │ logo.png
+    │ background.jpg
+    │ icon.svg
