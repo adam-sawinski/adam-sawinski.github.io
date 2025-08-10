@@ -150,6 +150,7 @@ a {
   /* Remove the mask property here, as we'll create the curve differently */
   /* -webkit-mask: none; */
   /* mask: none; */
+   z-index:2;
 }
 
 /* Heading style */
