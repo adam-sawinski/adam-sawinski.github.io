@@ -211,25 +211,27 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
-.skills-list li {
-  margin-bottom: 1.5em;
+.domain-group {
+  background: #f5f1ea; /* light warm background */
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-.domain-pill {
-  display: inline-block;
-  background: #b7a287; /* warm tan accent */
+.domain-label {
+  font-weight: 700;
+  font-size: 1.1em;
   color: #3a3a39;
-  font-weight: 600;
-  padding: 0.3em 1em;
-  border-radius: 9999px;
-  font-size: 1em;
-  margin-bottom: 0.6em;
+  display: block;
+  margin-bottom: 0.8em;
 }
 
 .skills-pills {
-  margin-top: 0.3em;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
