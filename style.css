@@ -157,20 +157,17 @@ a {
   z-index: 5;
 }
 
-/* Concave bridge shape immediately right of about-intro */
 .about-bridge {
-  width: 20%;              /* width of the concave shape */
-  height: 120px;           /* same height as overlap */
+  width: 20%;
+  height: 120px;
   background: white;
-
-  /* Circular cutout on left bottom corner */
-  clip-path: circle(60px at 0% 100%);
-  
-  /* Matching shadow for consistency */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  
   position: relative;
   z-index: 4;
+
+  /* Use mask-image to cut out a circle from the left bottom corner */
+  -webkit-mask-image: radial-gradient(circle 60px at left bottom, transparent 59px, black 60px);
+  mask-image: radial-gradient(circle 60px at left bottom, transparent 59px, black 60px);
 }
 
 /* Body content full width below */
