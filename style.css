@@ -217,7 +217,7 @@ a {
 }
 
 .domain-group {
-  background: #e7e9ea; /* light warm background */
+  background: #e7e9ea; /* light grey background */
   border-radius: 12px;
   padding: 1em 1.5em;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
@@ -239,7 +239,7 @@ a {
 
 .skill-pill {
   display: inline-block;
-  background: #d6cbbd; /* lighter warm tan */
+  background: #8d4747; /* lighter brick red */
   color: #3a3a39;
   padding: 0.25em 0.8em;
   border-radius: 9999px;
