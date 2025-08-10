@@ -191,7 +191,7 @@ a:hover, a:focus {
   z-index: 5;
   color: #3a3a39;
   font-weight: 700;
-  font-size: 2.618em; /* big heading */
+  font-size: 1em; /* big heading */
   letter-spacing: 0.04em;
 }
 .about-intro h2 {
