@@ -140,7 +140,7 @@ a {
 .about-top-wrapper {
   display: flex;
   align-items: flex-end; /* align bottoms */
-  margin-top: -120px; /* overlap hero */
+  margin-top: -150px; /* overlap hero */
   gap: 0;
   position: relative;
   z-index: 3;
@@ -155,7 +155,9 @@ a {
   position: relative;
   z-index: 5;
 }
-
+.about-intro .h2{
+font-size:45px;
+}
 .about-bridge {
   width: 100px;
   height: 100px;
