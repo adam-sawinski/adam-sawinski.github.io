@@ -185,7 +185,7 @@ a {
   background: white; /* Match the background color of the white section */
   border-top-left-radius: 100%; /* Create the quarter-circle curve */
   transform: translateY(50%); /* Adjust to move the curve into position and create the concave effect */
-  z-index: 0; /* Ensure it's behind the content of about-intro but above about-body */
+  z-index: 1; /* Ensure it's behind the content of about-intro but above about-body */
 }
 
 
