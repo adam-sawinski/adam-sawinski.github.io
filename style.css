@@ -154,12 +154,23 @@ a {
   font-size: 2em;
   color: #3a3a39;
 }
+.about-header {
+  width: 30%;
+  background: var(--your-bg-color);
+  padding: 2rem;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.2), /* top shadow */
+              -4px 0 10px rgba(0,0,0,0.2), /* left shadow */
+              4px 0 10px rgba(0,0,0,0.2),  /* right shadow */
+              inset 0 -10px 10px var(--your-bg-color); /* hides bottom shadow */
+  border-bottom-right-radius: 50px; /* adjust to taste */
+
+}
 
 /* Full-width section for body text */
 .about-body {
   background: white;
   padding: 2em;
-  border-radius: 0 0 20px 20px; /* rounded only on bottom corners */
+  border-radius: 0 0 40px 40px; /* bigger curve to match intro box */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   width: 100%;
   line-height: 1.6;
