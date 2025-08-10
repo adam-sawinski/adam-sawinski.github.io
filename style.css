@@ -153,7 +153,7 @@ a {
   height: 50px;
   background: white;
   padding: 1.5em 2em 0;
-  border-radius: 40px 40px 0 0;
+  border-radius: 40px 30px 0 0;
   position: relative;
   z-index: 5;
 }
@@ -171,8 +171,8 @@ a {
   z-index: 4;
 
   /* Concave circular cutout rotated 180deg => top right corner */
-  -webkit-mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 60px);
-  mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 60px);
+  -webkit-mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
+  mask-image: radial-gradient(circle 50px at right top, transparent 50px, black 30px);
 }
 
 /* Body content full width below */
