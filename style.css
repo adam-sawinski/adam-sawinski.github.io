@@ -62,20 +62,20 @@ a {
    HERO SECTION
 ------------------------- */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4em 2em;
   max-width: 100%;
-  margin: auto;
-  gap: 3em;
   background-image: url("background-wavy-lines.jpg");
   background-size: cover; /* Scales the image to cover the entire element */
   background-position: center; /* Centers the image within the element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 .hero-container{
-max-width:1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  gap: 3em; 
+  padding: 4em 2em;  
+  max-width:1200px;
 }
 .hero-text {
   flex: 1;
