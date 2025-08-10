@@ -134,10 +134,9 @@ a {
   margin: 0 auto;
   padding: 0 2em;
   z-index: 2;
-  /* Add overflow: hidden to contain the pseudo-element if it extends beyond the main container */
-  overflow: hidden; 
 }
 
+/* Overlap box for heading */
 .about-intro {
   position: relative;
   background: white;
@@ -145,19 +144,22 @@ a {
   width: 30%;
   margin-top: -120px; /* overlap hero */
   border-radius: 40px 40px 0 0; /* rounded top corners */
-  /* Adjust margin-top if needed, but aim to minimize overlap if possible with the new curve method */
-  margin-top: -120px;
-  border-radius: 40px 40px 0 0; /* Keep top rounded corners */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  z-index: 3;
+}
 
-  /* Mask with inner concave curve on right side */
-  -webkit-mask:
-    radial-gradient(circle 50px at 100% 90%, transparent 48%, black 50%) right center no-repeat;
-  mask:
-    radial-gradient(circle 50px at 100% 90%, transparent 48%, black 50%) right center no-repeat;
-  /* Remove the mask property here, as we'll create the curve differently */
-  /* -webkit-mask: none; */
-  /* mask: none; */
+/* Concave circular cutout on bottom-right corner */
+.about-intro::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;    /* vertical offset - adjust for depth */
+  right: -25px;     /* horizontal offset - adjust for width */
+  width: 50px;      /* size of cutout circle */
+  height: 50px;
+  background: white; /* match background color */
+  border-radius: 50%; /* make it a perfect circle */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08); /* optional shadow for blending */
+  z-index: 4;
 }
 
 /* Heading style */
@@ -167,6 +169,7 @@ a {
   color: #3a3a39;
 }
 
+/* Full-width section for body text */
 .about-body {
   background: white;
   padding: 2em;
@@ -175,28 +178,10 @@ a {
   width: 100%;
   line-height: 1.6;
   color: #555;
-  margin-top: -25px; /* nest inside intro's curve */
-  /* Adjust this margin to align with the new curve, likely less negative */
-  margin-top: -25px; 
+  margin-top: -25px; /* nest it upward into concave cutout */
   position: relative;
   z-index: 1;
 }
-
-/* Create the concave curve using a pseudo-element on .about-intro */
-.about-intro::after {
-  content: '';
-  position: absolute;
-  bottom: 0; /* Position at the bottom of .about-intro */
-  right: 0;
-  width: 100px; /* Adjust width and height to control the curve size */
-  height: 100px;
-  background: white; /* Match the background color of the white section */
-  border-top-left-radius: 100%; /* Create the quarter-circle curve */
-  transform: translateY(50%); /* Adjust to move the curve into position and create the concave effect */
-  z-index: 0; /* Ensure it's behind the content of about-intro but above about-body */
-}
-
-
 /* -------------------------
    PROJECT CARDS
 ------------------------- */
