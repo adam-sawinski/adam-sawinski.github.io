@@ -130,6 +130,7 @@ a:hover, a:focus {
 .hero-text h1 .accent {
   color: #894545; /* punchy red accent */
   font-size: 2em;
+  line-height: 1;
 }
 
 .hero-text .description {
