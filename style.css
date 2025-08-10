@@ -125,6 +125,44 @@ a {
 }
 
 /* -------------------------
+   ABOUT SECTION
+------------------------- */
+#about {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 2em 2em;
+}
+
+/* The "cut-out" white box */
+.about-intro {
+  position: relative;
+  background: white;
+  padding: 1.5em 2em;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 60%;
+  z-index: 2;
+  
+  /* This creates the overlap */
+  margin-top: -60px; /* adjust based on hero height */
+}
+
+/* About heading style */
+.about-intro h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #3a3a39;
+}
+
+/* Rest of the about text */
+.about-content {
+  margin-top: 1.5em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* -------------------------
    SECTION HEADINGS
 ------------------------- */
 section h2 {
