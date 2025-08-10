@@ -155,7 +155,7 @@ a {
   position: relative;
   z-index: 5;
 }
-.about-intro .h2{
+.about-intro h2{
 font-size:45px;
 }
 .about-bridge {
