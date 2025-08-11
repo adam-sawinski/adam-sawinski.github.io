@@ -433,6 +433,9 @@ a:hover, a:focus {
 .project-card:hover .expand-icon {
   opacity: 1;
 }
+.project-card:hover .card-text{
+color:#ffffff;
+}
 
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
