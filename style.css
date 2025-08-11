@@ -326,6 +326,7 @@ a:hover, a:focus {
    PROJECT CARDS
 ------------------------- */
 #projects {
+  max-width:80%;
   padding: 4rem 2rem;
   background-color: #f9f9f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
