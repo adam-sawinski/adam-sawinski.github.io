@@ -365,12 +365,12 @@ a:hover, a:focus {
 .project-card .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.7);
   transition: background 0.3s ease;
 }
 
 .project-card:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .card-content {
