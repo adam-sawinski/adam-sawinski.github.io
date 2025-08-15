@@ -237,10 +237,36 @@ a:hover, a:focus {
     max-width: 1000px;
     margin: 50px auto;
     padding: 0 20px;
+}
+
+.skills-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-left: 3px solid #7b5cff;
+    padding-left: 15px;
+}
+
+.skills-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.skills-header .heading-link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #7b5cff;
+    font-weight: bold;
+}
+
+.skills-group {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 40px;
+    margin-bottom: 40px;
 }
 
 .skills-text {
@@ -249,17 +275,10 @@ a:hover, a:focus {
     padding-left: 15px;
 }
 
-.skills-text h2 {
-    font-size: 1.5rem;
+.skills-text h3 {
+    font-size: 1.3rem;
     font-weight: bold;
-    margin: 0 0 10px;
-}
-
-.skills-text .heading-link {
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: #7b5cff;
-    font-weight: bold;
+    margin: 0;
 }
 
 .skills-logos {
