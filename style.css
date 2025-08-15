@@ -233,93 +233,58 @@ a:hover, a:focus {
 /* -------------------------
    SKILLS SECTION
 ------------------------- */
-#skills {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 0 2em;
-  font-family: Arial, sans-serif;
-  color: #3a3a39;
-  letter-spacing: 0.02em;
-  font-size: 1em;
+.skills-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.section-pill {
-  background: #894545; /* punchy warm accent */
-  color: white;
-  padding: 0.6em 1.8em;
-  border-radius: 9999px; /* pill shape */
-  font-size: 1.618em;
-  font-weight: 700;
-  margin: 0; /* reset default h2 margin */
-  white-space: nowrap;
-  letter-spacing: 0.06em;
+.skills-text {
+    flex: 1 1 200px;
+    border-left: 3px solid #7b5cff;
+    padding-left: 15px;
 }
 
-.heading-link {
-  font-size: 1em;
-  color: #894545; /* dark red text */
-  border: 2px solid #894545;
-  border-radius: 9999px;
-  padding: 0.4em 1em;
-  background: transparent;
-  text-decoration: none;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: background-color 0.3s, color 0.3s;
-  letter-spacing: 0.05em;
+.skills-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
 }
 
-.heading-link:hover,
-.heading-link:focus {
-  background-color: #894545;
-  color: white;
-  outline: none;
+.skills-text .heading-link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #7b5cff;
+    font-weight: bold;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  font-weight: 400;
-  font-size: 1em;
+.skills-logos {
+    flex: 2 1 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px 30px;
+    align-items: center;
 }
 
-.domain-group {
-  background: #e7e9ea; /* light grey background */
-  border-radius: 12px;
-  padding: 1em 1.5em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  color: #3a3a39;
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.domain-label {
-  font-weight: 700;
-  font-size: 1.618em;
-  color: #3a3a39;
-  display: block;
-  margin-bottom: 0.8em;
-  letter-spacing: 0.04em;
+.skill img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
-.skills-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-}
-
-.skill-pill {
-  display: inline-block;
-  background: #8d4747; /* lighter brick red */
-  color: #ffffff;
-  padding: 0.25em 0.8em;
-  border-radius: 9999px;
-  font-size: 1em;
-  font-weight: 400;
-  white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.skill span {
+    font-size: 0.95rem;
+    color: #333;
 }
 
 /* -------------------------
